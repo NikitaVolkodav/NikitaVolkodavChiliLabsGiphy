@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		FD23959F2B175B0C0078BFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD23959E2B175B0C0078BFCA /* AppDelegate.swift */; };
 		FD2395A12B175B0C0078BFCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2395A02B175B0C0078BFCA /* SceneDelegate.swift */; };
-		FD2395A32B175B0C0078BFCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2395A22B175B0C0078BFCA /* ViewController.swift */; };
-		FD2395A62B175B0C0078BFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2395A42B175B0C0078BFCA /* Main.storyboard */; };
+		FD2395A32B175B0C0078BFCA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2395A22B175B0C0078BFCA /* MainViewController.swift */; };
 		FD2395A82B175B0E0078BFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2395A72B175B0E0078BFCA /* Assets.xcassets */; };
 		FD2395AB2B175B0E0078BFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2395A92B175B0E0078BFCA /* LaunchScreen.storyboard */; };
+		FD2395B52B175EC20078BFCA /* GiphyUISDK in Frameworks */ = {isa = PBXBuildFile; productRef = FD2395B42B175EC20078BFCA /* GiphyUISDK */; };
+		FD2395BB2B18D6830078BFCA /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2395BA2B18D6830078BFCA /* MainContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD23959B2B175B0C0078BFCA /* NikitaVolkodavChiliLabsGiphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikitaVolkodavChiliLabsGiphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD23959E2B175B0C0078BFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD2395A02B175B0C0078BFCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD2395A22B175B0C0078BFCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD2395A52B175B0C0078BFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD2395A22B175B0C0078BFCA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FD2395A72B175B0E0078BFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD2395AA2B175B0E0078BFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD2395AC2B175B0E0078BFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2395BA2B18D6830078BFCA /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2395B52B175EC20078BFCA /* GiphyUISDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +58,39 @@
 		FD23959D2B175B0C0078BFCA /* NikitaVolkodavChiliLabsGiphy */ = {
 			isa = PBXGroup;
 			children = (
+				FD2395B62B175F9A0078BFCA /* ViewControllers */,
+				FD2395B22B175C2D0078BFCA /* SuportingFiles */,
+			);
+			path = NikitaVolkodavChiliLabsGiphy;
+			sourceTree = "<group>";
+		};
+		FD2395B22B175C2D0078BFCA /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				FD23959E2B175B0C0078BFCA /* AppDelegate.swift */,
 				FD2395A02B175B0C0078BFCA /* SceneDelegate.swift */,
-				FD2395A22B175B0C0078BFCA /* ViewController.swift */,
-				FD2395A42B175B0C0078BFCA /* Main.storyboard */,
 				FD2395A72B175B0E0078BFCA /* Assets.xcassets */,
 				FD2395A92B175B0E0078BFCA /* LaunchScreen.storyboard */,
 				FD2395AC2B175B0E0078BFCA /* Info.plist */,
 			);
-			path = NikitaVolkodavChiliLabsGiphy;
+			path = SuportingFiles;
+			sourceTree = "<group>";
+		};
+		FD2395B62B175F9A0078BFCA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD2395B92B18D6750078BFCA /* Views */,
+				FD2395A22B175B0C0078BFCA /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD2395B92B18D6750078BFCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD2395BA2B18D6830078BFCA /* MainContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,9 @@
 			dependencies = (
 			);
 			name = NikitaVolkodavChiliLabsGiphy;
+			packageProductDependencies = (
+				FD2395B42B175EC20078BFCA /* GiphyUISDK */,
+			);
 			productName = NikitaVolkodavChiliLabsGiphy;
 			productReference = FD23959B2B175B0C0078BFCA /* NikitaVolkodavChiliLabsGiphy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,9 @@
 				Base,
 			);
 			mainGroup = FD2395922B175B0C0078BFCA;
+			packageReferences = (
+				FD2395B32B175EC20078BFCA /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */,
+			);
 			productRefGroup = FD23959C2B175B0C0078BFCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +159,6 @@
 			files = (
 				FD2395AB2B175B0E0078BFCA /* LaunchScreen.storyboard in Resources */,
 				FD2395A82B175B0E0078BFCA /* Assets.xcassets in Resources */,
-				FD2395A62B175B0C0078BFCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD2395A32B175B0C0078BFCA /* ViewController.swift in Sources */,
+				FD2395BB2B18D6830078BFCA /* MainContentView.swift in Sources */,
+				FD2395A32B175B0C0078BFCA /* MainViewController.swift in Sources */,
 				FD23959F2B175B0C0078BFCA /* AppDelegate.swift in Sources */,
 				FD2395A12B175B0C0078BFCA /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD2395A42B175B0C0078BFCA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD2395A52B175B0C0078BFCA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FD2395A92B175B0E0078BFCA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +313,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5XHF8YABJ7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NikitaVolkodavChiliLabsGiphy/Info.plist;
+				INFOPLIST_FILE = NikitaVolkodavChiliLabsGiphy/SuportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +340,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5XHF8YABJ7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NikitaVolkodavChiliLabsGiphy/Info.plist;
+				INFOPLIST_FILE = NikitaVolkodavChiliLabsGiphy/SuportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD2395B32B175EC20078BFCA /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Giphy/giphy-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD2395B42B175EC20078BFCA /* GiphyUISDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD2395B32B175EC20078BFCA /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */;
+			productName = GiphyUISDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD2395932B175B0C0078BFCA /* Project object */;
 }
